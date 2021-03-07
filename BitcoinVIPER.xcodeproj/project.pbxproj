@@ -1,0 +1,862 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E728981425D6EF4500311DE2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E728981325D6EF4500311DE2 /* AppDelegate.swift */; };
+		E728981625D6EF4500311DE2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E728981525D6EF4500311DE2 /* SceneDelegate.swift */; };
+		E728981825D6EF4500311DE2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E728981725D6EF4500311DE2 /* ViewController.swift */; };
+		E728981B25D6EF4500311DE2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E728981925D6EF4500311DE2 /* Main.storyboard */; };
+		E728981D25D6EF4B00311DE2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E728981C25D6EF4B00311DE2 /* Assets.xcassets */; };
+		E728982025D6EF4B00311DE2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E728981E25D6EF4B00311DE2 /* LaunchScreen.storyboard */; };
+		E728982B25D6EF4B00311DE2 /* BitcoinVIPERTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E728982A25D6EF4B00311DE2 /* BitcoinVIPERTests.swift */; };
+		E728983625D6EF4B00311DE2 /* BitcoinVIPERUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E728983525D6EF4B00311DE2 /* BitcoinVIPERUITests.swift */; };
+		E72898A825D6F44800311DE2 /* BitcoinLocalDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E728988B25D6F44800311DE2 /* BitcoinLocalDataManager.swift */; };
+		E72898A925D6F44800311DE2 /* BitcoinAPIDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E728988D25D6F44800311DE2 /* BitcoinAPIDataManager.swift */; };
+		E72898AA25D6F44800311DE2 /* BitcoinPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E728988F25D6F44800311DE2 /* BitcoinPresenter.swift */; };
+		E72898AB25D6F44800311DE2 /* BitcoinWireFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = E728989125D6F44800311DE2 /* BitcoinWireFrame.swift */; };
+		E72898AC25D6F44800311DE2 /* BitcoinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E728989325D6F44800311DE2 /* BitcoinViewController.swift */; };
+		E72898AD25D6F44800311DE2 /* BitcoinProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = E728989525D6F44800311DE2 /* BitcoinProtocols.swift */; };
+		E72898AE25D6F44800311DE2 /* BitcoinInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E728989725D6F44800311DE2 /* BitcoinInteractor.swift */; };
+		E72898AF25D6F44800311DE2 /* BitcoinDetailLocalDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E728989B25D6F44800311DE2 /* BitcoinDetailLocalDataManager.swift */; };
+		E72898B025D6F44800311DE2 /* BitcoinDetailAPIDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E728989D25D6F44800311DE2 /* BitcoinDetailAPIDataManager.swift */; };
+		E72898B125D6F44800311DE2 /* BitcoinDetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E728989F25D6F44800311DE2 /* BitcoinDetailPresenter.swift */; };
+		E72898B225D6F44800311DE2 /* BitcoinDetailWireFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = E72898A125D6F44800311DE2 /* BitcoinDetailWireFrame.swift */; };
+		E72898B325D6F44800311DE2 /* BitcoinDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E72898A325D6F44800311DE2 /* BitcoinDetailViewController.swift */; };
+		E72898B425D6F44800311DE2 /* BitcoinDetailProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = E72898A525D6F44800311DE2 /* BitcoinDetailProtocols.swift */; };
+		E72898B525D6F44800311DE2 /* BitcoinDetailInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E72898A725D6F44800311DE2 /* BitcoinDetailInteractor.swift */; };
+		E72898BA25D6F5BF00311DE2 /* BitcoinData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E72898B925D6F5BF00311DE2 /* BitcoinData.swift */; };
+		E72898BF25D79D3800311DE2 /* BitcoinRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = E72898BE25D79D3800311DE2 /* BitcoinRow.swift */; };
+		E72898C425D8A9F700311DE2 /* CountryAllowed.swift in Sources */ = {isa = PBXBuildFile; fileRef = E72898C325D8A9F700311DE2 /* CountryAllowed.swift */; };
+		E745C75625F458EA0062577A /* countries.json in Resources */ = {isa = PBXBuildFile; fileRef = E745C75525F458EA0062577A /* countries.json */; };
+		E745C75A25F459120062577A /* Countries.swift in Sources */ = {isa = PBXBuildFile; fileRef = E745C75925F459120062577A /* Countries.swift */; };
+		E7E79ACA25E419DF00B0AB8A /* SwiftUICharts in Frameworks */ = {isa = PBXBuildFile; productRef = E7E79AC925E419DF00B0AB8A /* SwiftUICharts */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E728982725D6EF4B00311DE2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E728980825D6EF4500311DE2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E728980F25D6EF4500311DE2;
+			remoteInfo = BitcoinVIPER;
+		};
+		E728983225D6EF4B00311DE2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E728980825D6EF4500311DE2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E728980F25D6EF4500311DE2;
+			remoteInfo = BitcoinVIPER;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		E7726CE625DCC9640096B533 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		E728981025D6EF4500311DE2 /* BitcoinVIPER.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BitcoinVIPER.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E728981325D6EF4500311DE2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E728981525D6EF4500311DE2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		E728981725D6EF4500311DE2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E728981A25D6EF4500311DE2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E728981C25D6EF4B00311DE2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E728981F25D6EF4B00311DE2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E728982125D6EF4B00311DE2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E728982625D6EF4B00311DE2 /* BitcoinVIPERTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BitcoinVIPERTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E728982A25D6EF4B00311DE2 /* BitcoinVIPERTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BitcoinVIPERTests.swift; sourceTree = "<group>"; };
+		E728982C25D6EF4B00311DE2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E728983125D6EF4B00311DE2 /* BitcoinVIPERUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BitcoinVIPERUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E728983525D6EF4B00311DE2 /* BitcoinVIPERUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BitcoinVIPERUITests.swift; sourceTree = "<group>"; };
+		E728983725D6EF4B00311DE2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E728988B25D6F44800311DE2 /* BitcoinLocalDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BitcoinLocalDataManager.swift; sourceTree = "<group>"; };
+		E728988D25D6F44800311DE2 /* BitcoinAPIDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BitcoinAPIDataManager.swift; sourceTree = "<group>"; };
+		E728988F25D6F44800311DE2 /* BitcoinPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BitcoinPresenter.swift; sourceTree = "<group>"; };
+		E728989125D6F44800311DE2 /* BitcoinWireFrame.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BitcoinWireFrame.swift; sourceTree = "<group>"; };
+		E728989325D6F44800311DE2 /* BitcoinViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BitcoinViewController.swift; sourceTree = "<group>"; };
+		E728989525D6F44800311DE2 /* BitcoinProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BitcoinProtocols.swift; sourceTree = "<group>"; };
+		E728989725D6F44800311DE2 /* BitcoinInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BitcoinInteractor.swift; sourceTree = "<group>"; };
+		E728989B25D6F44800311DE2 /* BitcoinDetailLocalDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BitcoinDetailLocalDataManager.swift; sourceTree = "<group>"; };
+		E728989D25D6F44800311DE2 /* BitcoinDetailAPIDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BitcoinDetailAPIDataManager.swift; sourceTree = "<group>"; };
+		E728989F25D6F44800311DE2 /* BitcoinDetailPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BitcoinDetailPresenter.swift; sourceTree = "<group>"; };
+		E72898A125D6F44800311DE2 /* BitcoinDetailWireFrame.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BitcoinDetailWireFrame.swift; sourceTree = "<group>"; };
+		E72898A325D6F44800311DE2 /* BitcoinDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BitcoinDetailViewController.swift; sourceTree = "<group>"; };
+		E72898A525D6F44800311DE2 /* BitcoinDetailProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BitcoinDetailProtocols.swift; sourceTree = "<group>"; };
+		E72898A725D6F44800311DE2 /* BitcoinDetailInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BitcoinDetailInteractor.swift; sourceTree = "<group>"; };
+		E72898B925D6F5BF00311DE2 /* BitcoinData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BitcoinData.swift; sourceTree = "<group>"; };
+		E72898BE25D79D3800311DE2 /* BitcoinRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BitcoinRow.swift; sourceTree = "<group>"; };
+		E72898C325D8A9F700311DE2 /* CountryAllowed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryAllowed.swift; sourceTree = "<group>"; };
+		E745C75525F458EA0062577A /* countries.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = countries.json; sourceTree = "<group>"; };
+		E745C75925F459120062577A /* Countries.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Countries.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E728980D25D6EF4500311DE2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E7E79ACA25E419DF00B0AB8A /* SwiftUICharts in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E728982325D6EF4B00311DE2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E728982E25D6EF4B00311DE2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E728980725D6EF4500311DE2 = {
+			isa = PBXGroup;
+			children = (
+				E728981225D6EF4500311DE2 /* BitcoinVIPER */,
+				E728982925D6EF4B00311DE2 /* BitcoinVIPERTests */,
+				E728983425D6EF4B00311DE2 /* BitcoinVIPERUITests */,
+				E728981125D6EF4500311DE2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E728981125D6EF4500311DE2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E728981025D6EF4500311DE2 /* BitcoinVIPER.app */,
+				E728982625D6EF4B00311DE2 /* BitcoinVIPERTests.xctest */,
+				E728983125D6EF4B00311DE2 /* BitcoinVIPERUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E728981225D6EF4500311DE2 /* BitcoinVIPER */ = {
+			isa = PBXGroup;
+			children = (
+				E745C75525F458EA0062577A /* countries.json */,
+				E728988825D6F44800311DE2 /* Bitcoin */,
+				E728989825D6F44800311DE2 /* BitcoinDetail */,
+				E728981325D6EF4500311DE2 /* AppDelegate.swift */,
+				E728981525D6EF4500311DE2 /* SceneDelegate.swift */,
+				E728981725D6EF4500311DE2 /* ViewController.swift */,
+				E728981925D6EF4500311DE2 /* Main.storyboard */,
+				E728981C25D6EF4B00311DE2 /* Assets.xcassets */,
+				E728981E25D6EF4B00311DE2 /* LaunchScreen.storyboard */,
+				E728982125D6EF4B00311DE2 /* Info.plist */,
+				E72898B925D6F5BF00311DE2 /* BitcoinData.swift */,
+				E745C75925F459120062577A /* Countries.swift */,
+			);
+			path = BitcoinVIPER;
+			sourceTree = "<group>";
+		};
+		E728982925D6EF4B00311DE2 /* BitcoinVIPERTests */ = {
+			isa = PBXGroup;
+			children = (
+				E728982A25D6EF4B00311DE2 /* BitcoinVIPERTests.swift */,
+				E728982C25D6EF4B00311DE2 /* Info.plist */,
+			);
+			path = BitcoinVIPERTests;
+			sourceTree = "<group>";
+		};
+		E728983425D6EF4B00311DE2 /* BitcoinVIPERUITests */ = {
+			isa = PBXGroup;
+			children = (
+				E728983525D6EF4B00311DE2 /* BitcoinVIPERUITests.swift */,
+				E728983725D6EF4B00311DE2 /* Info.plist */,
+			);
+			path = BitcoinVIPERUITests;
+			sourceTree = "<group>";
+		};
+		E728988825D6F44800311DE2 /* Bitcoin */ = {
+			isa = PBXGroup;
+			children = (
+				E728988925D6F44800311DE2 /* DataManager */,
+				E728988E25D6F44800311DE2 /* Presenter */,
+				E728989025D6F44800311DE2 /* WireFrame */,
+				E728989225D6F44800311DE2 /* View */,
+				E728989425D6F44800311DE2 /* Protocols */,
+				E728989625D6F44800311DE2 /* Interactor */,
+				E72898C325D8A9F700311DE2 /* CountryAllowed.swift */,
+			);
+			path = Bitcoin;
+			sourceTree = "<group>";
+		};
+		E728988925D6F44800311DE2 /* DataManager */ = {
+			isa = PBXGroup;
+			children = (
+				E728988A25D6F44800311DE2 /* Local */,
+				E728988C25D6F44800311DE2 /* API */,
+			);
+			path = DataManager;
+			sourceTree = "<group>";
+		};
+		E728988A25D6F44800311DE2 /* Local */ = {
+			isa = PBXGroup;
+			children = (
+				E728988B25D6F44800311DE2 /* BitcoinLocalDataManager.swift */,
+			);
+			path = Local;
+			sourceTree = "<group>";
+		};
+		E728988C25D6F44800311DE2 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				E728988D25D6F44800311DE2 /* BitcoinAPIDataManager.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		E728988E25D6F44800311DE2 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				E728988F25D6F44800311DE2 /* BitcoinPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		E728989025D6F44800311DE2 /* WireFrame */ = {
+			isa = PBXGroup;
+			children = (
+				E728989125D6F44800311DE2 /* BitcoinWireFrame.swift */,
+			);
+			path = WireFrame;
+			sourceTree = "<group>";
+		};
+		E728989225D6F44800311DE2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E728989325D6F44800311DE2 /* BitcoinViewController.swift */,
+				E72898BE25D79D3800311DE2 /* BitcoinRow.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E728989425D6F44800311DE2 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				E728989525D6F44800311DE2 /* BitcoinProtocols.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		E728989625D6F44800311DE2 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				E728989725D6F44800311DE2 /* BitcoinInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		E728989825D6F44800311DE2 /* BitcoinDetail */ = {
+			isa = PBXGroup;
+			children = (
+				E728989925D6F44800311DE2 /* DataManager */,
+				E728989E25D6F44800311DE2 /* Presenter */,
+				E72898A025D6F44800311DE2 /* WireFrame */,
+				E72898A225D6F44800311DE2 /* View */,
+				E72898A425D6F44800311DE2 /* Protocols */,
+				E72898A625D6F44800311DE2 /* Interactor */,
+			);
+			name = BitcoinDetail;
+			path = ../../../../modules/BitcoinDetail;
+			sourceTree = "<group>";
+		};
+		E728989925D6F44800311DE2 /* DataManager */ = {
+			isa = PBXGroup;
+			children = (
+				E728989A25D6F44800311DE2 /* Local */,
+				E728989C25D6F44800311DE2 /* API */,
+			);
+			path = DataManager;
+			sourceTree = "<group>";
+		};
+		E728989A25D6F44800311DE2 /* Local */ = {
+			isa = PBXGroup;
+			children = (
+				E728989B25D6F44800311DE2 /* BitcoinDetailLocalDataManager.swift */,
+			);
+			path = Local;
+			sourceTree = "<group>";
+		};
+		E728989C25D6F44800311DE2 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				E728989D25D6F44800311DE2 /* BitcoinDetailAPIDataManager.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		E728989E25D6F44800311DE2 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				E728989F25D6F44800311DE2 /* BitcoinDetailPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		E72898A025D6F44800311DE2 /* WireFrame */ = {
+			isa = PBXGroup;
+			children = (
+				E72898A125D6F44800311DE2 /* BitcoinDetailWireFrame.swift */,
+			);
+			path = WireFrame;
+			sourceTree = "<group>";
+		};
+		E72898A225D6F44800311DE2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E72898A325D6F44800311DE2 /* BitcoinDetailViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E72898A425D6F44800311DE2 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				E72898A525D6F44800311DE2 /* BitcoinDetailProtocols.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		E72898A625D6F44800311DE2 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				E72898A725D6F44800311DE2 /* BitcoinDetailInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E728980F25D6EF4500311DE2 /* BitcoinVIPER */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E728983A25D6EF4B00311DE2 /* Build configuration list for PBXNativeTarget "BitcoinVIPER" */;
+			buildPhases = (
+				E728980C25D6EF4500311DE2 /* Sources */,
+				E728980D25D6EF4500311DE2 /* Frameworks */,
+				E728980E25D6EF4500311DE2 /* Resources */,
+				E7726CE625DCC9640096B533 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BitcoinVIPER;
+			packageProductDependencies = (
+				E7E79AC925E419DF00B0AB8A /* SwiftUICharts */,
+			);
+			productName = BitcoinVIPER;
+			productReference = E728981025D6EF4500311DE2 /* BitcoinVIPER.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E728982525D6EF4B00311DE2 /* BitcoinVIPERTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E728983D25D6EF4B00311DE2 /* Build configuration list for PBXNativeTarget "BitcoinVIPERTests" */;
+			buildPhases = (
+				E728982225D6EF4B00311DE2 /* Sources */,
+				E728982325D6EF4B00311DE2 /* Frameworks */,
+				E728982425D6EF4B00311DE2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E728982825D6EF4B00311DE2 /* PBXTargetDependency */,
+			);
+			name = BitcoinVIPERTests;
+			productName = BitcoinVIPERTests;
+			productReference = E728982625D6EF4B00311DE2 /* BitcoinVIPERTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E728983025D6EF4B00311DE2 /* BitcoinVIPERUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E728984025D6EF4B00311DE2 /* Build configuration list for PBXNativeTarget "BitcoinVIPERUITests" */;
+			buildPhases = (
+				E728982D25D6EF4B00311DE2 /* Sources */,
+				E728982E25D6EF4B00311DE2 /* Frameworks */,
+				E728982F25D6EF4B00311DE2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E728983325D6EF4B00311DE2 /* PBXTargetDependency */,
+			);
+			name = BitcoinVIPERUITests;
+			productName = BitcoinVIPERUITests;
+			productReference = E728983125D6EF4B00311DE2 /* BitcoinVIPERUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E728980825D6EF4500311DE2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					E728980F25D6EF4500311DE2 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					E728982525D6EF4B00311DE2 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = E728980F25D6EF4500311DE2;
+					};
+					E728983025D6EF4B00311DE2 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = E728980F25D6EF4500311DE2;
+					};
+				};
+			};
+			buildConfigurationList = E728980B25D6EF4500311DE2 /* Build configuration list for PBXProject "BitcoinVIPER" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E728980725D6EF4500311DE2;
+			packageReferences = (
+				E7E79AC825E419DF00B0AB8A /* XCRemoteSwiftPackageReference "ChartView" */,
+			);
+			productRefGroup = E728981125D6EF4500311DE2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E728980F25D6EF4500311DE2 /* BitcoinVIPER */,
+				E728982525D6EF4B00311DE2 /* BitcoinVIPERTests */,
+				E728983025D6EF4B00311DE2 /* BitcoinVIPERUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E728980E25D6EF4500311DE2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E728982025D6EF4B00311DE2 /* LaunchScreen.storyboard in Resources */,
+				E728981D25D6EF4B00311DE2 /* Assets.xcassets in Resources */,
+				E745C75625F458EA0062577A /* countries.json in Resources */,
+				E728981B25D6EF4500311DE2 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E728982425D6EF4B00311DE2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E728982F25D6EF4B00311DE2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E728980C25D6EF4500311DE2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E72898A825D6F44800311DE2 /* BitcoinLocalDataManager.swift in Sources */,
+				E72898AA25D6F44800311DE2 /* BitcoinPresenter.swift in Sources */,
+				E72898AF25D6F44800311DE2 /* BitcoinDetailLocalDataManager.swift in Sources */,
+				E72898C425D8A9F700311DE2 /* CountryAllowed.swift in Sources */,
+				E728981825D6EF4500311DE2 /* ViewController.swift in Sources */,
+				E72898A925D6F44800311DE2 /* BitcoinAPIDataManager.swift in Sources */,
+				E728981425D6EF4500311DE2 /* AppDelegate.swift in Sources */,
+				E72898B325D6F44800311DE2 /* BitcoinDetailViewController.swift in Sources */,
+				E72898B425D6F44800311DE2 /* BitcoinDetailProtocols.swift in Sources */,
+				E72898B025D6F44800311DE2 /* BitcoinDetailAPIDataManager.swift in Sources */,
+				E72898AE25D6F44800311DE2 /* BitcoinInteractor.swift in Sources */,
+				E72898BA25D6F5BF00311DE2 /* BitcoinData.swift in Sources */,
+				E72898B225D6F44800311DE2 /* BitcoinDetailWireFrame.swift in Sources */,
+				E72898B525D6F44800311DE2 /* BitcoinDetailInteractor.swift in Sources */,
+				E72898AC25D6F44800311DE2 /* BitcoinViewController.swift in Sources */,
+				E72898AD25D6F44800311DE2 /* BitcoinProtocols.swift in Sources */,
+				E72898BF25D79D3800311DE2 /* BitcoinRow.swift in Sources */,
+				E72898AB25D6F44800311DE2 /* BitcoinWireFrame.swift in Sources */,
+				E72898B125D6F44800311DE2 /* BitcoinDetailPresenter.swift in Sources */,
+				E745C75A25F459120062577A /* Countries.swift in Sources */,
+				E728981625D6EF4500311DE2 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E728982225D6EF4B00311DE2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E728982B25D6EF4B00311DE2 /* BitcoinVIPERTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E728982D25D6EF4B00311DE2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E728983625D6EF4B00311DE2 /* BitcoinVIPERUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E728982825D6EF4B00311DE2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E728980F25D6EF4500311DE2 /* BitcoinVIPER */;
+			targetProxy = E728982725D6EF4B00311DE2 /* PBXContainerItemProxy */;
+		};
+		E728983325D6EF4B00311DE2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E728980F25D6EF4500311DE2 /* BitcoinVIPER */;
+			targetProxy = E728983225D6EF4B00311DE2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E728981925D6EF4500311DE2 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E728981A25D6EF4500311DE2 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E728981E25D6EF4B00311DE2 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E728981F25D6EF4B00311DE2 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E728983825D6EF4B00311DE2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E728983925D6EF4B00311DE2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E728983B25D6EF4B00311DE2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 48ZPQMZGD5;
+				INFOPLIST_FILE = BitcoinVIPER/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.glbnt.BitcoinVIPER;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		E728983C25D6EF4B00311DE2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 48ZPQMZGD5;
+				INFOPLIST_FILE = BitcoinVIPER/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.glbnt.BitcoinVIPER;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		E728983E25D6EF4B00311DE2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 48ZPQMZGD5;
+				INFOPLIST_FILE = BitcoinVIPERTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.glbnt.BitcoinVIPERTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BitcoinVIPER.app/BitcoinVIPER";
+			};
+			name = Debug;
+		};
+		E728983F25D6EF4B00311DE2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 48ZPQMZGD5;
+				INFOPLIST_FILE = BitcoinVIPERTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.glbnt.BitcoinVIPERTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BitcoinVIPER.app/BitcoinVIPER";
+			};
+			name = Release;
+		};
+		E728984125D6EF4B00311DE2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 48ZPQMZGD5;
+				INFOPLIST_FILE = BitcoinVIPERUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.glbnt.BitcoinVIPERUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = BitcoinVIPER;
+			};
+			name = Debug;
+		};
+		E728984225D6EF4B00311DE2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 48ZPQMZGD5;
+				INFOPLIST_FILE = BitcoinVIPERUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.glbnt.BitcoinVIPERUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = BitcoinVIPER;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E728980B25D6EF4500311DE2 /* Build configuration list for PBXProject "BitcoinVIPER" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E728983825D6EF4B00311DE2 /* Debug */,
+				E728983925D6EF4B00311DE2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E728983A25D6EF4B00311DE2 /* Build configuration list for PBXNativeTarget "BitcoinVIPER" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E728983B25D6EF4B00311DE2 /* Debug */,
+				E728983C25D6EF4B00311DE2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E728983D25D6EF4B00311DE2 /* Build configuration list for PBXNativeTarget "BitcoinVIPERTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E728983E25D6EF4B00311DE2 /* Debug */,
+				E728983F25D6EF4B00311DE2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E728984025D6EF4B00311DE2 /* Build configuration list for PBXNativeTarget "BitcoinVIPERUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E728984125D6EF4B00311DE2 /* Debug */,
+				E728984225D6EF4B00311DE2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		E7E79AC825E419DF00B0AB8A /* XCRemoteSwiftPackageReference "ChartView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AppPear/ChartView";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.5.4;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		E7E79AC925E419DF00B0AB8A /* SwiftUICharts */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E7E79AC825E419DF00B0AB8A /* XCRemoteSwiftPackageReference "ChartView" */;
+			productName = SwiftUICharts;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = E728980825D6EF4500311DE2 /* Project object */;
+}
