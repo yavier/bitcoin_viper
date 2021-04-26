@@ -2,11 +2,12 @@
 //  BitcoinPresenter.swift
 //  VIPER
 //
-//  Created by yavito on 02/12/2021.
+//  Created by Francisco Garcia on 02/12/2021.
 //  Copyright © 2021 . All rights reserved.
 //
 
 import Foundation
+import Combine
 
 class BitcoinPresenter: BitcoinPresenterProtocol, BitcoinInteractorOutputProtocol {
   weak var view: BitcoinViewProtocol?
@@ -25,7 +26,6 @@ class BitcoinPresenter: BitcoinPresenterProtocol, BitcoinInteractorOutputProtoco
       self.view?.showRates()
     }
   }
-
 
   func fetchInformation() {
     self.interactor?.fetchBitcoinRates()

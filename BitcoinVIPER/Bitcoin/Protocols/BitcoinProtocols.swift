@@ -2,12 +2,13 @@
 //  BitcoinProtocols.swift
 //  VIPER
 //
-//  Created by yavito on 02/12/2021.
+//  Created by Francisco Garcia on 02/12/2021.
 //  Copyright © 2021 . All rights reserved.
 //
 
 import Foundation
 import UIKit
+import Combine
 
 protocol BitcoinViewProtocol: LoadableViewController {
   var presenter: BitcoinPresenterProtocol? { get set }
@@ -71,7 +72,7 @@ protocol BitcoinAPIDataManagerInputProtocol: class {
    * Add here your methods for communication INTERACTOR -> APIDATAMANAGER
    */
 
-  func callBitcoinAPI(completion: @escaping ((BitcoinData) -> Void))
+  func callBitcoinAPI() -> AnyPublisher<BitcoinData, Error>
 }
 
 protocol BitcoinLocalDataManagerInputProtocol: class {
