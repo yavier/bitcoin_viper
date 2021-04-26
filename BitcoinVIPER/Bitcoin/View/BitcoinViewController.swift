@@ -25,7 +25,7 @@ class BitcoinViewController: UIViewController, BitcoinViewProtocol {
 
 //    let searchController = UISearchController(searchResultsController: nil)
     searchController.searchResultsUpdater = self
-//    searchController.dimsBackgroundDuringPresentation = false
+    searchController.dimsBackgroundDuringPresentation = false
     searchController.searchBar.sizeToFit()
     searchController.hidesNavigationBarDuringPresentation = true
 

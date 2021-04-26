@@ -7,16 +7,6 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-
-  override func viewDidLoad() {
-    super.viewDidLoad()
-    // Do any additional setup after loading the view.
-  }
-
-
-}
-
 public protocol LoadableViewController: class {
   static var storyboardFileName: String { get }
   static var storyboardID: String { get }

@@ -3,13 +3,13 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 52;
+	objectVersion = 50;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		E728981425D6EF4500311DE2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E728981325D6EF4500311DE2 /* AppDelegate.swift */; };
 		E728981625D6EF4500311DE2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E728981525D6EF4500311DE2 /* SceneDelegate.swift */; };
-		E728981825D6EF4500311DE2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E728981725D6EF4500311DE2 /* ViewController.swift */; };
+		E728981825D6EF4500311DE2 /* LoadableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E728981725D6EF4500311DE2 /* LoadableViewController.swift */; };
 		E728981B25D6EF4500311DE2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E728981925D6EF4500311DE2 /* Main.storyboard */; };
 		E728981D25D6EF4B00311DE2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E728981C25D6EF4B00311DE2 /* Assets.xcassets */; };
 		E728982025D6EF4B00311DE2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E728981E25D6EF4B00311DE2 /* LaunchScreen.storyboard */; };
@@ -32,8 +32,6 @@
 		E72898BA25D6F5BF00311DE2 /* BitcoinData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E72898B925D6F5BF00311DE2 /* BitcoinData.swift */; };
 		E72898BF25D79D3800311DE2 /* BitcoinRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = E72898BE25D79D3800311DE2 /* BitcoinRow.swift */; };
 		E72898C425D8A9F700311DE2 /* CountryAllowed.swift in Sources */ = {isa = PBXBuildFile; fileRef = E72898C325D8A9F700311DE2 /* CountryAllowed.swift */; };
-		E745C75A25F459120062577A /* Countries.swift in Sources */ = {isa = PBXBuildFile; fileRef = E745C75925F459120062577A /* Countries.swift */; };
-		E7E79ACA25E419DF00B0AB8A /* SwiftUICharts in Frameworks */ = {isa = PBXBuildFile; productRef = E7E79AC925E419DF00B0AB8A /* SwiftUICharts */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,7 +68,7 @@
 		E728981025D6EF4500311DE2 /* BitcoinVIPER.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BitcoinVIPER.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E728981325D6EF4500311DE2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E728981525D6EF4500311DE2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		E728981725D6EF4500311DE2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E728981725D6EF4500311DE2 /* LoadableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadableViewController.swift; sourceTree = "<group>"; };
 		E728981A25D6EF4500311DE2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E728981C25D6EF4B00311DE2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E728981F25D6EF4B00311DE2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -98,7 +96,6 @@
 		E72898B925D6F5BF00311DE2 /* BitcoinData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BitcoinData.swift; sourceTree = "<group>"; };
 		E72898BE25D79D3800311DE2 /* BitcoinRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BitcoinRow.swift; sourceTree = "<group>"; };
 		E72898C325D8A9F700311DE2 /* CountryAllowed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryAllowed.swift; sourceTree = "<group>"; };
-		E745C75925F459120062577A /* Countries.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Countries.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,7 +103,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E7E79ACA25E419DF00B0AB8A /* SwiftUICharts in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -154,13 +150,12 @@
 				E728989825D6F44800311DE2 /* BitcoinDetail */,
 				E728981325D6EF4500311DE2 /* AppDelegate.swift */,
 				E728981525D6EF4500311DE2 /* SceneDelegate.swift */,
-				E728981725D6EF4500311DE2 /* ViewController.swift */,
+				E728981725D6EF4500311DE2 /* LoadableViewController.swift */,
 				E728981925D6EF4500311DE2 /* Main.storyboard */,
 				E728981C25D6EF4B00311DE2 /* Assets.xcassets */,
 				E728981E25D6EF4B00311DE2 /* LaunchScreen.storyboard */,
 				E728982125D6EF4B00311DE2 /* Info.plist */,
 				E72898B925D6F5BF00311DE2 /* BitcoinData.swift */,
-				E745C75925F459120062577A /* Countries.swift */,
 			);
 			path = BitcoinVIPER;
 			sourceTree = "<group>";
@@ -360,7 +355,6 @@
 			);
 			name = BitcoinVIPER;
 			packageProductDependencies = (
-				E7E79AC925E419DF00B0AB8A /* SwiftUICharts */,
 			);
 			productName = BitcoinVIPER;
 			productReference = E728981025D6EF4500311DE2 /* BitcoinVIPER.app */;
@@ -434,7 +428,6 @@
 			);
 			mainGroup = E728980725D6EF4500311DE2;
 			packageReferences = (
-				E7E79AC825E419DF00B0AB8A /* XCRemoteSwiftPackageReference "ChartView" */,
 			);
 			productRefGroup = E728981125D6EF4500311DE2 /* Products */;
 			projectDirPath = "";
@@ -483,7 +476,7 @@
 				E72898AA25D6F44800311DE2 /* BitcoinPresenter.swift in Sources */,
 				E72898AF25D6F44800311DE2 /* BitcoinDetailLocalDataManager.swift in Sources */,
 				E72898C425D8A9F700311DE2 /* CountryAllowed.swift in Sources */,
-				E728981825D6EF4500311DE2 /* ViewController.swift in Sources */,
+				E728981825D6EF4500311DE2 /* LoadableViewController.swift in Sources */,
 				E72898A925D6F44800311DE2 /* BitcoinAPIDataManager.swift in Sources */,
 				E728981425D6EF4500311DE2 /* AppDelegate.swift in Sources */,
 				E72898B325D6F44800311DE2 /* BitcoinDetailViewController.swift in Sources */,
@@ -498,7 +491,6 @@
 				E72898BF25D79D3800311DE2 /* BitcoinRow.swift in Sources */,
 				E72898AB25D6F44800311DE2 /* BitcoinWireFrame.swift in Sources */,
 				E72898B125D6F44800311DE2 /* BitcoinDetailPresenter.swift in Sources */,
-				E745C75A25F459120062577A /* Countries.swift in Sources */,
 				E728981625D6EF4500311DE2 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -834,25 +826,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		E7E79AC825E419DF00B0AB8A /* XCRemoteSwiftPackageReference "ChartView" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/AppPear/ChartView";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 1.5.4;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		E7E79AC925E419DF00B0AB8A /* SwiftUICharts */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = E7E79AC825E419DF00B0AB8A /* XCRemoteSwiftPackageReference "ChartView" */;
-			productName = SwiftUICharts;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = E728980825D6EF4500311DE2 /* Project object */;
 }

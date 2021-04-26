@@ -29,26 +29,3 @@ protocol RowReusable {
   func setup(_ model: Model?)
 }
 
-
-
-class MovementRow: UITableViewCell, RowReusable {
-
-  typealias Model = Movement
-
-  static var identifier: String { "MovementRow" }
-
-
-  @IBOutlet weak var amountLabel: UILabel!
-  @IBOutlet weak var dateLabel: UILabel!
-  @IBOutlet weak var merchantLabel: UILabel!
-
-  func setup(_ model: Model?) {
-
-    let formatter = NumberFormatter()
-    formatter.numberStyle = .currency
-    formatter.currencySymbol = "$ "
-    amountLabel.text = formatter.string(from: NSDecimalNumber(string: model?.amount))
-    dateLabel.text = model?.date
-    merchantLabel.text = model?.merchant
-  }
-}
