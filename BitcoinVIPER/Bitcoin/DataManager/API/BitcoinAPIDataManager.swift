@@ -9,17 +9,24 @@
 import Foundation
 import Combine
 
+enum BitcoinFetchError: LocalizedError {
+
+  case urlNotValid
+}
+
 class BitcoinAPIDataManager: BitcoinAPIDataManagerInputProtocol {
 
   func callBitcoinAPI() -> AnyPublisher<BitcoinData, Error> {
 
-    let url = URL(string: "https://api.coinbase.com/v2/exchange-rates?currency=BTC")!
-    let urlRequest = URLRequest(url: url)
+    guard let url = URL(string: "https://api.coinbase.com/v2/exchange-rates?currency=BTC") else {
+      return Fail(error: BitcoinFetchError.urlNotValid).eraseToAnyPublisher()
+    }
 
+    let urlRequest = URLRequest(url: url)
     return URLSession.shared.dataTaskPublisher(for: urlRequest)
-      .tryMap { data, response in
-        try JSONDecoder().decode(BitcoinData.self, from: data)
-      }
+      .map(\.data)
+      .decode(type: BitcoinData.self, decoder: JSONDecoder())
+      .receive(on: DispatchQueue.main)
       .eraseToAnyPublisher()
   }
 

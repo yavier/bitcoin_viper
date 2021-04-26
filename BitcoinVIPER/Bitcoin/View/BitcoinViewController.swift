@@ -17,7 +17,7 @@ class BitcoinViewController: UIViewController, BitcoinViewProtocol {
 
   @IBOutlet weak var tableView: UITableView!
 
-  var searchController = UISearchController()
+  private var searchController = UISearchController()
   
   override func viewDidLoad() {
     super.viewDidLoad()

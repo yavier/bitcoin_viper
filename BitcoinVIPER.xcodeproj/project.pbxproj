@@ -32,7 +32,6 @@
 		E72898BA25D6F5BF00311DE2 /* BitcoinData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E72898B925D6F5BF00311DE2 /* BitcoinData.swift */; };
 		E72898BF25D79D3800311DE2 /* BitcoinRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = E72898BE25D79D3800311DE2 /* BitcoinRow.swift */; };
 		E72898C425D8A9F700311DE2 /* CountryAllowed.swift in Sources */ = {isa = PBXBuildFile; fileRef = E72898C325D8A9F700311DE2 /* CountryAllowed.swift */; };
-		E745C75625F458EA0062577A /* countries.json in Resources */ = {isa = PBXBuildFile; fileRef = E745C75525F458EA0062577A /* countries.json */; };
 		E745C75A25F459120062577A /* Countries.swift in Sources */ = {isa = PBXBuildFile; fileRef = E745C75925F459120062577A /* Countries.swift */; };
 		E7E79ACA25E419DF00B0AB8A /* SwiftUICharts in Frameworks */ = {isa = PBXBuildFile; productRef = E7E79AC925E419DF00B0AB8A /* SwiftUICharts */; };
 /* End PBXBuildFile section */
@@ -99,7 +98,6 @@
 		E72898B925D6F5BF00311DE2 /* BitcoinData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BitcoinData.swift; sourceTree = "<group>"; };
 		E72898BE25D79D3800311DE2 /* BitcoinRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BitcoinRow.swift; sourceTree = "<group>"; };
 		E72898C325D8A9F700311DE2 /* CountryAllowed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryAllowed.swift; sourceTree = "<group>"; };
-		E745C75525F458EA0062577A /* countries.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = countries.json; sourceTree = "<group>"; };
 		E745C75925F459120062577A /* Countries.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Countries.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -152,7 +150,6 @@
 		E728981225D6EF4500311DE2 /* BitcoinVIPER */ = {
 			isa = PBXGroup;
 			children = (
-				E745C75525F458EA0062577A /* countries.json */,
 				E728988825D6F44800311DE2 /* Bitcoin */,
 				E728989825D6F44800311DE2 /* BitcoinDetail */,
 				E728981325D6EF4500311DE2 /* AppDelegate.swift */,
@@ -457,7 +454,6 @@
 			files = (
 				E728982025D6EF4B00311DE2 /* LaunchScreen.storyboard in Resources */,
 				E728981D25D6EF4B00311DE2 /* Assets.xcassets in Resources */,
-				E745C75625F458EA0062577A /* countries.json in Resources */,
 				E728981B25D6EF4500311DE2 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

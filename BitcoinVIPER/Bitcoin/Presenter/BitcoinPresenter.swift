@@ -21,7 +21,6 @@ class BitcoinPresenter: BitcoinPresenterProtocol, BitcoinInteractorOutputProtoco
   }
 
   var filtered: [Rate] = [] {
-
     didSet {
       self.view?.showRates()
     }
@@ -36,7 +35,6 @@ class BitcoinPresenter: BitcoinPresenterProtocol, BitcoinInteractorOutputProtoco
   }
 
   func showDetail(rate: Rate) {
-
     if rate.isAllowed() {
       wireFrame?.showDetail(fromView: self.view!, rate)
     } else {
