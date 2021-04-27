@@ -1,0 +1,11 @@
+{
+  "LABEL": {
+    "name": "title needs formatting",
+    "color": "EEEEEE"
+  },
+  "CHECKS": {
+
+    "regexp": "^\[(CBX[0-9]*-[0-9]+|MD-[0-9]+|MAWBMP-[0-9]+|MI-[0-9]+|NJ)\]\[(BugFix|HotFix|Improvement|Refactor|Docs|UserStory)\]\[[A-Z0-9]{2,}\] .{5,}(\n|.)*$",
+
+  }
+}
